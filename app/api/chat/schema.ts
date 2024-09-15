@@ -17,6 +17,14 @@ export const expenseSchema = z.object({
   }),
 });
 
+export const StructuredResponse = z.object({
+  manufacture_in_usa: z.string(),
+  manufacture_in_china: z.string(),
+  manufacture_in_mexico: z.string(),
+  other_manufacture_outside_of_usa: z.string(),
+  score: z.number(),
+});
+
 // define a type for the partial notifications during generation
 export type PartialExpense = DeepPartial<typeof expenseSchema>["expense"];
 
