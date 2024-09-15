@@ -98,6 +98,10 @@ export default function Home() {
                   Company Manufacturing Analysis
                 </h2>
                 <div className="grid grid-cols-2 gap-2">
+                  <p className="font-medium">
+                    Is this a manufacturing company?
+                  </p>
+                  <p className="font-bold">{object.is_manufacturing_company}</p>
                   <p className="font-medium">Do they manufacture in USA?</p>
                   <p className="font-bold">{object.manufacture_in_usa}</p>
                   <p className="font-medium">Do they manufacture in China?</p>

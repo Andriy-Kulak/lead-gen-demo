@@ -30,8 +30,14 @@ export const analyzeCompany = async ({
         messages: [
           {
             role: "system",
-            content:
-              "User will provide a company name and a website url. You will lookup information about the company online & on their website & answer the following questions concisely. If unsure, then say 'Maybe'. 1) Does this company manufacture in China? Yes/No/Maybe 2) Do they Manufacture in USA? Yes/No/Maybe 3) Do they manufacture in Mexico? Yes/No/Maybe",
+            content: `User will provide a company name and a website url.
+              You will lookup information about the company online & on their website & answer the following questions concisely.
+              If unsure, then say 'Maybe'.
+              1) Is this a manufacturing company with manufacturing facilities that include metal manufacturing?
+              2) Does this company manufacture in China? Yes/No/Maybe
+              3) Do they Manufacture in USA? Yes/No/Maybe
+              4) Do they manufacture in Mexico? Yes/No/Maybe
+              5) Do they manufacture in other countries outside of USA, China, and Mexico? Yes/No/Maybe`,
           },
           {
             role: "user",
