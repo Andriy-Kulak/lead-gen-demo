@@ -1,40 +1,11 @@
-# Vercel AI SDK useObject Example
+# Lead Gen Demo
 
-This example demonstrates how to use the [Vercel AI SDK](https://sdk.vercel.ai/docs) with [Next.js](https://nextjs.org/) with the `useObject` hook to stream structured object generation to the client with the AI provider of your choice.
+Install: `npm install`
 
-## Deploy your own
+Add your Perplexity API & OpenAI API keys to the `.env.local` file. Use the `.env.example` file as a template.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fvercel-labs%2Fai-sdk-preview-use-object&env=OPENAI_API_KEY&envDescription=API%20keys%20needed%20for%20application&envLink=platform.openai.com)
+Run: `npm run dev`
 
-## How to use
+## How this works
 
-Run [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
-
-```bash
-npx create-next-app --example https://github.com/vercel-labs/ai-sdk-preview-use-object ai-sdk-preview-use-object-example
-```
-
-```bash
-yarn create next-app --example https://github.com/vercel-labs/ai-sdk-preview-use-object ai-sdk-preview-use-object-example
-```
-
-```bash
-pnpm create next-app --example https://github.com/vercel-labs/ai-sdk-preview-use-object ai-sdk-preview-use-object-example
-```
-
-To run the example locally you need to:
-
-1. Sign up for accounts with the AI providers you want to use (e.g., OpenAI, Anthropic).
-2. Obtain API keys for each provider.
-3. Set the required environment variables as shown in the `.env.example` file, but in a new file called `.env`.
-4. `npm install` to install the required dependencies.
-5. `npm run dev` to launch the development server.
-
-
-## Learn More
-
-To learn more about Vercel AI SDK or Next.js take a look at the following resources:
-
-- [Vercel AI SDK docs](https://sdk.vercel.ai/docs)
-- [Vercel AI Playground](https://play.vercel.ai)
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+This is a simple demo that uses Perplexity AI to answer questions about a company's manufacturing capabilities. It uses OpenAI to create a structured output from the answer.
