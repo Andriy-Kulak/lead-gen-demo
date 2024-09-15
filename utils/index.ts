@@ -26,7 +26,7 @@ export const analyzeCompany = async ({
       },
       body: JSON.stringify({
         max_tokens: maxTokens,
-        model: modelOptions.llamaSmall,
+        model: modelOptions.large,
         messages: [
           {
             role: "system",
